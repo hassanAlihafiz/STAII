@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-container {
+    @apply mt-20 sm:mt-auto;
+  }
+  .form-bottom-section {
+    @apply absolute z-10 pt-8 lg:static lg:pt-5;
+  }
+}

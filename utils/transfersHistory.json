@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Pending",
+    "options": [
+      {
+        "id": "1",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Apr 20, 2023",
+        "amount": "+$100.00"
+      }
+    ]
+  },
+  {
+    "name": "Past 30 days",
+    "options": [
+      {
+        "id": "1",
+        "title": "Withdrawal to bank account",
+        "date": "Apr 19, 2023",
+        "amount": "-$100.00"
+      },
+      {
+        "id": "2",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Apr 5, 2023",
+        "amount": "+$5.00"
+      },
+      {
+        "id": "3",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Apr 4, 2023",
+        "amount": "+$15.00"
+      },
+      {
+        "id": "4",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Apr 3, 2023",
+        "amount": "+$45.00"
+      },
+      {
+        "id": "5",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Apr 2, 2023",
+        "amount": "+$195.00"
+      },
+      {
+        "id": "6",
+        "title": "Withdrawal to bank account",
+        "date": "Apr 2, 2023",
+        "amount": "-$95.00"
+      }
+    ]
+  },
+  {
+    "name": "Older",
+    "options": [
+      {
+        "id": "1",
+        "title": "Deposit to SocialTrader.AI",
+        "date": "Mar 2, 2023",
+        "amount": "+$195.00"
+      },
+      {
+        "id": "2",
+        "title": "Withdrawal to bank account",
+        "date": "Mar 2, 2023",
+        "amount": "-$95.00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Movements",
+    "options": [
+      {
+        "id": "1",
+        "name": "Market Milestone"
+      },
+      {
+        "id": "2",
+        "name": "Watchlist Daily Top Gainer/Loser"
+      },
+      {
+        "id": "3",
+        "name": "Watchlist Movement"
+      },
+      {
+        "id": "4",
+        "name": "Price Alerts"
+      }
+    ]
+  },
+  {
+    "name": "News",
+    "options": [
+      {
+        "id": "1",
+        "name": "Breaking News"
+      },
+      {
+        "id": "2",
+        "name": "Watchlist Newss"
+      }
+    ]
+  },
+  {
+    "name": "Community",
+    "options": [
+      {
+        "id": "1",
+        "name": "Mentions"
+      },
+      {
+        "id": "2",
+        "name": "Follows"
+      },
+      {
+        "id": "3",
+        "name": "Likes"
+      },
+      {
+        "id": "4",
+        "name": "Replies"
+      },
+      {
+        "id": "5",
+        "name": "Reposts"
+      },
+      {
+        "id": "6",
+        "name": "Polls"
+      }
+    ]
+  },
+  {
+    "name": "RoboTrader",
+    "options": [
+      {
+        "id": "1",
+        "name": "Transaction"
+      },
+      {
+        "id": "2",
+        "name": "Order Finished"
+      }
+    ]
+  },
+  {
+    "name": "System",
+    "options": [
+      {
+        "id": "1",
+        "name": "Important Updates"
+      },
+      {
+        "id": "2",
+        "name": "Order Event PromotionsB"
+      }
+    ]
+  }
+]

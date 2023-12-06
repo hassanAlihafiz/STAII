@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap");
+@layer base {
+  :root {
+    --background: white;
+    --foreground: #f2fffc;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: #9ca5af;
+
+    --popover: #ffffff;
+    --popover-foreground: #2a3033;
+
+    --border: rgba(11, 132, 45, 0.14);
+    --input: #d7dbe0;
+
+    --card: rgba(249, 250, 254, 1);
+    --card-foreground: #2a3033;
+
+    --primary: #03090c;
+    --primary-foreground: #069d6e;
+
+    --secondary: rgba(6, 157, 110, 1);
+    --secondary-foreground: rgba(11, 127, 94, 1);
+
+    --text: rgba(106, 115, 129, 1);
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: #2a3033;
+
+    --destructive: #dc2626;
+    --destructive-foreground: white;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+
+    --swiper-btn: rgb(97 102 108);
+  }
+
+  .dark {
+    --background: rgba(16, 21, 32, 1);
+    --foreground: rgba(0, 226, 131, 0.14);
+
+    --muted: 223 47% 11%;
+    --muted-foreground: #9ca5af;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: #202a41;
+    --popover-foreground: white;
+
+    --border: rgba(255, 255, 255, 0.2);
+    --input: #3e4856;
+
+    --card: rgba(35, 39, 54, 1);
+    --card-foreground: 213 31% 91%;
+
+    --primary: rgba(255, 255, 255, 1);
+    --primary-foreground: #069d6e;
+
+    --text: rgba(237, 238, 243, 1);
+
+    --secondary: rgba(6, 157, 110, 1);
+    --secondary-foreground: rgba(11, 127, 94, 1);
+
+    --destructive: #dc2626;
+    --destructive-foreground: white;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+
+    --swiper-btn: #3e4856;
+  }
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+@layer base {
+  * {
+    @apply font-poppins;
+  }
+  body {
+    @apply bg-background text-brand-gray-100 dark:text-white;
+  }
+}
+@layer components {
+  .short-title {
+    @apply text-center uppercase text-sm font-semibold text-secondary;
+  }
+  .btn {
+    @apply rounded-xl w-full md:w-fit bg-primary-foreground px-6 py-4 text-base font-semibold capitalize text-white  hover:bg-[#0B7F5E] transition-all duration-150;
+  }
+  .title {
+    @apply text-primary my-2  lg:my-6 lg:text-4xl font-bold  lg:leading-[42px] text-[24px] text-left;
+  }
+  .text {
+    @apply mb-11 text-base leading-7 text-[--text];
+  }
+  .spin-loader {
+    @apply inline-block text-black h-6 w-6 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite];
+  }
+  .input {
+    @apply w-full border dark:bg-[#2D374E] text-[#2A3033]  rounded-lg  px-4 py-2 !h-[52px] md:h-14 focus:outline-none  dark:text-white  outline-none text-base transition-all;
+  }
+  .page-h1 {
+    @apply w-full text-[#2A3033]  dark:text-white font-semibold text-xl lg:text-[32px];
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input:focus {
+  border: 1px solid #1f75ff !important;
+  box-shadow: 0px 0px 0px 4px rgba(31, 117, 255, 0.15) !important;
+}
+@media screen and (max-width: 768px) {
+  .price-input:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+.border-shadow {
+  box-shadow: hsla(198, 71%, 15%, 0.08) 0px 1px 10px 1px;
+}
+.notification-shadow {
+  box-shadow: 0px 4px 9px -4px rgba(170, 104, 6, 0.12);
+}
+
+/* Auth Progress */
+.progress-fill {
+  background: linear-gradient(270deg, #2ec075 0%, #65fab4 57.32%, #48d39a 100%);
+}
+
+/* Swiper */
+
+.card-slider-container {
+  position: relative;
+}
+
+/* Portfolio Mian Page */
+table .td-heading,
+table .td-heading + tr {
+  @apply !border-t-0;
+}
+
+.range-slider-thumb {
+  @apply flex items-center justify-center w-4 h-6 bg-brand-gray-20 hover:bg-brand-gray-30 border-2 border-white rounded-2xl shadow-thumb transition-colors duration-200 cursor-pointer focus:outline-none;
+}
+
+.DialogOverlay {
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.DialogContent {
+  /* box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 85vh;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.userProfileTopCard {
+  width: calc(100% - 104px);
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* list chart */
+.g2-tooltip {
+  @apply -translate-y-16;
+}

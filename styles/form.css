@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-section {
+    @apply flex flex-col items-center justify-center w-full my-auto;
+  }
+  .form-container {
+    @apply lg:border-[#EDEEF3] h-full lg:h-fit dark:bg-transparent lg:dark:bg-[#202A41] dark:border-transparent lg:dark:border-[#2D374E] flex w-full  max-w-xl flex-col items-start justify-center rounded-xl  lg:shadow-lg lg:border md:py-6 px-4 md:p-10 mx-auto my-auto;
+  }
+  .form-input {
+    @apply mb-4 dark:bg-[#2D374E] dark:border-[#3E4856] w-full md:mb-6 md:w-[495px];
+  }
+  .form-title {
+    @apply mb-2 text-2xl dark:text-white font-semibold text-[#2A3033];
+  }
+  .form-text {
+    @apply text-sm dark:text-[#D7DBE0] text-[#6A7381];
+  }
+  .form-link {
+    @apply mx-1 cursor-pointer text-primary-foreground hover:underline dark:text-white;
+  }
+  .form-back-btn {
+    @apply items-center justify-center text-primary-foreground  transition-all cursor-pointer duration-300 ease-in-out mb-4 lg:mb-6 -ml-1 hover:-ml-2 dark:text-white border border-[#D7DBE0] dark:border-[#4B5563] rounded-full w-[30px] aspect-square grid place-items-center lg:flex lg:flex-row lg:w-fit lg:h-fit lg:border-none;
+  }
+  .form-bottom-section {
+    @apply flex p-5  border-t border-t-[#EDEEF3] dark:border-[#2D374E] w-full items-center justify-between fixed bottom-0 right-0 left-0 lg:static lg:border-none lg:px-0 bg-white dark:bg-[#101520] lg:bg-transparent lg:dark:bg-transparent;
+  }
+  .input-error {
+    @apply text-xs mt-1 text-destructive;
+  }
+  .form-text-bottom {
+    @apply text-[#2A3033] text-sm dark:text-gray-400;
+  }
+  .light-text {
+    @apply text-xs font-medium uppercase dark:text-[#9CA5AF];
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* @media screen and (max-width: 1024px) {
+  .form-container {
+    height: 70vh;
+  }
+} */
+
+.dollarSign::before {
+  content: "$";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: 1;
+  color: black;
+}
+
+/* width */
+/* width */
+.chanels-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.chanels-container::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+.chanels-container::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
